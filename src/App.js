@@ -357,7 +357,7 @@ const App = () => {
                 <div className="container mx-auto px-4 flex justify-between items-center">
                   <div className="flex items-center">
                     <img src={logo} alt="Yuccah garden landscapes Logo" className="h-10" />
-                    <a href="#" className="text-base sm:text-xl md:text-xl lg:text-xl font-bold text-white tracking-wide">YUCCAH GARDEN LANDSCAPES</a>
+                    <a href="#home" className="text-base sm:text-xl md:text-xl lg:text-xl font-bold text-white tracking-wide">YUCCAH GARDEN LANDSCAPES</a>
                   </div>
                   <div className="hidden md:flex space-x-6">
                     <NavLink href="#home">Home</NavLink>

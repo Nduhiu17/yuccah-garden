@@ -33,8 +33,6 @@ export default function BlogPostPage() {
   // Social share URLs
   const shareUrl = `https://yuccahgardens.co.ke/blog/${post.id}`;
   const shareText = encodeURIComponent(`${post.title} | Yuccah garden landscapes Blog`);
-  const shareDesc = encodeURIComponent(post.excerpt);
-  const shareImage = encodeURIComponent(post.image);
 
   // JSON-LD structured data for this blog post
   const postJsonLd = {
