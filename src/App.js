@@ -10,6 +10,7 @@ import BlogMainPage from './pages/BlogMainPage';
 import { Link } from 'react-router-dom';
 
 import logo from './images/logo.png';
+import { generateEnhancedDescription } from './api/aiClient';
 // import all images from images/heroes folder
 // Utility to import all images from a folder
 function importAll(r) {
@@ -963,51 +964,24 @@ const Portfolio = () => {
     { src: getImg(galleryImagesAll, 'out_door_landscaping.jpg'), alt: 'Outdoor Landscaping', caption: 'Outdoor Landscaping', description: 'Expansive outdoor landscaping project.' },
   ];
 
-  // Function to enhance project description using Gemini API
+  // Function to enhance project description using primary Gemini, fallback to ChatGPT
   const enhanceDescription = async (projectId, currentDescription) => {
     setLoadingProjectId(projectId);
     setError(null);
 
     try {
       const prompt = `Rewrite and enhance the following landscaping project description to be more engaging, marketing-oriented, and descriptive for a company website. Focus on highlighting the benefits, unique aspects, and the quality of work. Keep it concise but impactful (around 50-70 words): "${currentDescription}"`;
-      
-      let chatHistory = [];
-      chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-      const payload = { contents: chatHistory };
-      const apiKey = process.env.REACT_APP_GEMINI_API_KEY; // get your API key from environment variables
-      console.log("Using API Key:", apiKey); // Debugging line to check if API key is being used
-      
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
-      const response = await fetch(apiUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
+      const enhancedText = await generateEnhancedDescription(prompt);
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(`API error: ${response.status} ${response.statusText} - ${errorData.error.message}`);
-      }
-
-      const result = await response.json();
-      
-      if (result.candidates && result.candidates.length > 0 &&
-          result.candidates[0].content && result.candidates[0].content.parts &&
-          result.candidates[0].content.parts.length > 0) {
-        const enhancedText = result.candidates[0].content.parts[0].text;
-        
-        setProjects(prevProjects =>
-          prevProjects.map((proj, idx) =>
-            idx === projectId ? { ...proj, description: enhancedText } : proj
-          )
-        );
-      } else {
-        throw new Error("Invalid response structure from Gemini API.");
-      }
+      setProjects(prevProjects =>
+        prevProjects.map((proj, idx) =>
+          idx === projectId ? { ...proj, description: enhancedText } : proj
+        )
+      );
     } catch (err) {
-      console.error("Error enhancing description:", err);
-      setError("Failed to enhance description. Please try again.");
+      console.error('Error enhancing description:', err);
+      setError('Failed to enhance description. Please try again.');
     } finally {
       setLoadingProjectId(null);
     }
