@@ -421,5 +421,141 @@ export const blogPosts = [
 
       <p>Let us help you cultivate a healthy, beautiful, and resilient outdoor sanctuary in Kenya.</p>
     `
+  },
+  {
+    id: 6,
+    title: "Best Landscaping Company in Nairobi: How to Choose the Right Contractor",
+    date: "2026-06-20",
+    author: "Yuccah garden landscapes Team",
+    tags: ["Nairobi landscaping", "landscape contractor", "garden design", "SEO"],
+    image: "https://placehold.co/600x350/8FCB6D/333333?text=Nairobi+Landscaping+Company",
+    excerpt: "Choosing the right landscaping company in Nairobi can make all the difference. Learn what to look for in experience, portfolio, maintenance support, and local expertise.",
+    content: `
+      <p>When homeowners and businesses in Nairobi search for a <strong>landscaping company</strong>, they are often looking for more than a quick garden cleanup. They want a team that can deliver quality design, reliable maintenance, and long-lasting outdoor solutions tailored to the local climate and lifestyle. At <strong>Yuccah garden landscapes</strong>, we believe the best results come from working with a contractor who understands Nairobi's landscape, soil conditions, and client expectations.</p>
+
+      <h2>What to Look for in a Landscaping Contractor in Nairobi</h2>
+      <p>The right contractor should bring a combination of creativity, technical skill, and local knowledge. Look for a provider with a strong portfolio of completed projects, clear communication, and a transparent process from design to installation and maintenance.</p>
+      <ul>
+        <li><strong>Local Experience:</strong> A contractor familiar with Nairobi understands drainage, plant selection, and maintenance needs for the region.</li>
+        <li><strong>Full-Service Capability:</strong> The best landscaping firms offer design, installation, irrigation, hardscaping, and ongoing garden care.</li>
+        <li><strong>Clear Pricing:</strong> A professional team should provide a realistic quote and explain the scope of work in plain language.</li>
+      </ul>
+
+      <h2>Why Local Knowledge Matters</h2>
+      <p>Landscaping in Nairobi is not one-size-fits-all. Weather patterns, soil types, and property sizes vary significantly. Working with a local company helps ensure the right plants, materials, and layouts are used for both beauty and durability.</p>
+
+      <p>At Yuccah garden landscapes, our team combines design expertise with practical execution so every outdoor space is built to thrive in its environment.</p>
+    `
+  },
+  {
+    id: 7,
+    title: "Cabro Laying and Walkway Construction in Nairobi: What to Know Before You Build",
+    date: "2026-06-22",
+    author: "Yuccah garden landscapes Team",
+    tags: ["cabro laying", "walkway construction", "Nairobi", "hardscaping"],
+    image: "https://placehold.co/600x350/B7D8A8/333333?text=Cabro+Laying+Nairobi",
+    excerpt: "Planning cabro laying or walkway construction in Nairobi? Learn how proper groundwork, drainage, and design choices create durable outdoor spaces.",
+    content: `
+      <p>Cabro laying and walkway construction are among the most popular landscaping upgrades for homes and commercial properties in Nairobi. They add structure, improve access, and create a polished finish for gardens, driveways, and outdoor entertainment areas. However, the success of these features depends heavily on preparation and workmanship.</p>
+
+      <h2>Why Groundwork Matters</h2>
+      <p>Proper excavation, compaction, and leveling are essential for a walkway or cabro surface that lasts. Poor preparation often leads to sinking, shifting, or water pooling, especially during Nairobi's rainy periods.</p>
+
+      <ul>
+        <li><strong>Drainage Planning:</strong> Good drainage keeps surfaces intact and prevents erosion.</li>
+        <li><strong>Strong Base Layer:</strong> A well-prepared sub-base provides stability and longevity.</li>
+        <li><strong>Professional Finishing:</strong> Neat edging and accurate layout make the final result more durable and attractive.</li>
+      </ul>
+
+      <h2>Choosing the Right Design</h2>
+      <p>Walkways, patios, and cabro areas should complement the rest of the landscape rather than feel added on. A thoughtful layout improves flow, increases usability, and enhances curb appeal.</p>
+    `
+  },
+  {
+    id: 8,
+    title: "Garden Maintenance Services in Nairobi: Keep Your Outdoor Space Beautiful Year-Round",
+    date: "2026-06-24",
+    author: "Yuccah garden landscapes Team",
+    tags: ["garden maintenance", "Nairobi", "landscaping services", "property care"],
+    image: "https://placehold.co/600x350/A6D49F/333333?text=Garden+Maintenance+Nairobi",
+    excerpt: "Regular garden maintenance keeps your Nairobi property healthy, attractive, and easy to enjoy. Discover the key services that make a difference all year long.",
+    content: `
+      <p>Maintaining a beautiful garden in Nairobi requires more than occasional watering or trimming. Regular care helps plants stay healthy, surfaces remain attractive, and outdoor spaces continue to serve their purpose throughout the year. Professional <strong>garden maintenance services</strong> save time while preserving the value of your property.</p>
+
+      <h2>Essential Maintenance Services</h2>
+      <p>A good maintenance package often includes pruning, weeding, lawn care, irrigation checks, mulching, and seasonal cleanups. These services keep the garden looking polished and prevent small issues from becoming costly problems.</p>
+
+      <ul>
+        <li><strong>Routine Pruning:</strong> Encourages healthy growth and keeps plants in shape.</li>
+        <li><strong>Weed and Pest Control:</strong> Reduces competition and protects plant health.</li>
+        <li><strong>Irrigation Monitoring:</strong> Helps conserve water and improves plant resilience.</li>
+      </ul>
+
+      <h2>Why Ongoing Maintenance Matters</h2>
+      <p>Well-kept gardens improve curb appeal, support relaxation and entertainment, and create a positive impression for visitors and clients. In Nairobi, where properties are often judged by both appearance and function, consistent maintenance is a smart investment.</p>
+    `
+  },
+  {
+    id: 9,
+    title: "Water Features in Nairobi Gardens: Adding Beauty and Calm to Your Outdoor Space",
+    date: "2026-06-26",
+    author: "Yuccah garden landscapes Team",
+    tags: ["water features", "Nairobi gardens", "outdoor design", "landscaping"],
+    image: "https://placehold.co/600x350/9FD3C7/333333?text=Water+Features+Nairobi",
+    excerpt: "Water features bring elegance, sound, and tranquility to Nairobi gardens. Learn how to choose the right design for your space and lifestyle.",
+    content: `
+      <p>Water features are a beautiful way to add movement, sound, and visual interest to a garden. In Nairobi, they can create a refreshing focal point for homes, hotels, and commercial properties alike. A well-designed fountain, pond, or waterfall can make an outdoor space feel more luxurious and relaxing.</p>
+
+      <h2>Why Homeowners Love Water Features</h2>
+      <p>Beyond aesthetics, water features can soften the atmosphere of a garden and mask unwanted noise from the surrounding area. They also work well in modern, tropical, and minimalist landscapes when designed carefully.</p>
+
+      <ul>
+        <li><strong>Visual Impact:</strong> A fountain or waterfall becomes a striking centerpiece.</li>
+        <li><strong>Relaxing Sound:</strong> Gentle water movement creates a calm and welcoming atmosphere.</li>
+        <li><strong>Cooling Effect:</strong> Water features can make outdoor spaces feel cooler in warm weather.</li>
+      </ul>
+    `
+  },
+  {
+    id: 10,
+    title: "Commercial Landscaping in Nairobi: Creating Professional Outdoor Spaces",
+    date: "2026-06-27",
+    author: "Yuccah garden landscapes Team",
+    tags: ["commercial landscaping", "Nairobi", "office gardens", "property appeal"],
+    image: "https://placehold.co/600x350/7FBA7A/333333?text=Commercial+Landscaping",
+    excerpt: "Professional landscaping helps businesses in Nairobi create welcoming entrances, improved curb appeal, and more attractive outdoor environments.",
+    content: `
+      <p>Commercial properties benefit greatly from landscaping that reflects a professional and modern image. From office compounds to retail spaces and hospitality venues, well-kept outdoor areas create a positive first impression for clients and visitors.</p>
+
+      <h2>What Good Commercial Landscaping Includes</h2>
+      <p>Commercial landscaping is not just about planting. It includes layout planning, hardscaping, irrigation, lighting, and ongoing maintenance so the space remains attractive and functional over time.</p>
+
+      <ul>
+        <li><strong>Entrance Design:</strong> A neatly landscaped entry adds instant impact.</li>
+        <li><strong>Low-Maintenance Planting:</strong> Helps reduce upkeep while maintaining a polished appearance.</li>
+        <li><strong>Seasonal Care:</strong> Keeps outdoor areas fresh, tidy, and welcoming all year round.</li>
+      </ul>
+    `
+  },
+  {
+    id: 11,
+    title: "Small Garden Design Ideas for Nairobi Homes",
+    date: "2026-06-28",
+    author: "Yuccah garden landscapes Team",
+    tags: ["small garden", "Nairobi", "garden design", "compact spaces"],
+    image: "https://placehold.co/600x350/9BCB8A/333333?text=Small+Garden+Ideas",
+    excerpt: "Even a compact garden in Nairobi can be transformed into a beautiful, functional outdoor retreat with smart planning and design.",
+    content: `
+      <p>Small gardens require thoughtful planning to make the most of every square meter. With the right layout, materials, and planting choices, a compact garden can feel spacious, attractive, and practical for daily use.</p>
+
+      <h2>Smart Ways to Maximize a Small Garden</h2>
+      <p>Vertical planting, layered greenery, and multi-purpose furniture can help a small outdoor area feel more open and useful. Compact gardens in Nairobi often work best when they balance softness, structure, and storage.</p>
+
+      <ul>
+        <li><strong>Use Height Wisely:</strong> Tall plants and vertical features add depth.</li>
+        <li><strong>Choose Flexible Furniture:</strong> Compact seating helps the space stay functional.</li>
+        <li><strong>Layer Planting:</strong> Combine ground cover, shrubs, and statement plants for balance.</li>
+      </ul>
+    `
   }
 ];
