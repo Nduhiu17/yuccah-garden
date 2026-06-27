@@ -107,8 +107,9 @@ const App = () => {
           {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Yuccah garden landscapes",
+            "name": "Yuccah Garden Landscapes",
             "url": "https://yuccahgardens.co.ke/",
+            "description": "Landscaping company in Nairobi, Kenya providing garden design, landscape maintenance, tree care, walkways, cabro laying, and water features.",
             "logo": "https://yuccahgardens.co.ke/logo.png",
             "sameAs": [
               "https://web.facebook.com/profile.php?id=100064331732564&_rdc=10&_rdr#"
@@ -126,11 +127,13 @@ const App = () => {
           {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Yuccah garden landscapes",
+            "name": "Yuccah Garden Landscapes",
             "image": "https://yuccahgardens.co.ke/logo.png",
+            "description": "Trusted landscaping company in Nairobi, Kenya for garden design, maintenance, tree care, walkways, cabro laying, and water features.",
             "@id": "https://yuccahgardens.co.ke/",
             "url": "https://yuccahgardens.co.ke/",
             "telephone": "+254717497376",
+            "areaServed": ["Nairobi", "Nairobi County", "Kenya"],
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Naivasha Road, P.O. Box 75113 , 00200",
@@ -162,8 +165,9 @@ const App = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Yuccah garden landscapes",
+            "name": "Yuccah Garden Landscapes",
             "url": "https://yuccahgardens.co.ke/",
+            "description": "Landscaping company in Nairobi, Kenya for garden design, maintenance, tree care, walkways, cabro laying, and water features.",
             "potentialAction": {
               "@type": "SearchAction",
               "target": "https://yuccahgardens.co.ke/?s={search_term_string}",
@@ -180,7 +184,7 @@ const App = () => {
           "jobTitle": "Founder & Director",
           "worksFor": {
             "@type": "Organization",
-            "name": "Yuccah garden landscapes"
+            "name": "Yuccah Garden Landscapes"
           },
           "address": {
             "@type": "PostalAddress",
@@ -201,7 +205,7 @@ const App = () => {
           "serviceType": "Landscaping, Garden Maintenance, Tree Care, Walkway Construction, Cabro Laying, Water Features & Pools",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Yuccah garden landscapes",
+            "name": "Yuccah Garden Landscapes",
             "url": "https://yuccahgardens.co.ke/"
           },
           "areaServed": {
@@ -664,6 +668,9 @@ const Services = () => {
     <section id="services" className="py-16 bg-white px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-green-800 mb-12">Our Comprehensive Services Portfolio</h2>
+        <p className="mx-auto mb-10 max-w-3xl text-center text-lg text-gray-700">
+          We are a trusted <strong>landscape contractor in Nairobi</strong> delivering garden landscaping, maintenance, hardscaping, tree care, cabro laying, and water feature solutions for residential and commercial properties across Nairobi and Kenya.
+        </p>
 
         {/* Landscaping */}
         <ServiceBlock
