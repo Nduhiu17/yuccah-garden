@@ -357,7 +357,9 @@ const App = () => {
               <nav className="fixed top-0 left-0 right-0 z-50 bg-green-800 shadow-lg py-4">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                   <div className="flex items-center">
+                    <div className="rounded-lg bg-white px-3 py-2 shadow-sm">
                     <img src={logo} alt="Yuccah garden landscapes Logo" className="h-10" />
+                  </div>
                     {/* <a href="#home" className="text-base sm:text-xl md:text-xl lg:text-xl font-bold text-white tracking-wide">YUCCAH GARDEN LANDSCAPES</a> */}
                   </div>
                   <div className="hidden md:flex space-x-6">
