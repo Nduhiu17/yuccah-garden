@@ -1,16 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { Suspense, lazy, useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 import { blogPosts } from "./blogData";
 
-// import logo
-import BlogPostPage from './pages/BlogPostPage';
-import BlogMainPage from './pages/BlogMainPage';
 import { Link } from 'react-router-dom';
 
 import logo from './images/logo.png';
 import { generateEnhancedDescription } from './api/aiClient';
+import LazyImage from './components/LazyImage';
+
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const BlogMainPage = lazy(() => import('./pages/BlogMainPage'));
 // import all images from images/heroes folder
 // Utility to import all images from a folder
 function importAll(r) {
@@ -348,8 +349,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/user/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="/blog/:id" element={<BlogPostPage />} />
-          <Route path="/blog" element={<BlogMainPage />} />
+          <Route path="/blog/:id" element={<Suspense fallback={<div className="min-h-screen bg-white" />}> <BlogPostPage /> </Suspense>} />
+          <Route path="/blog" element={<Suspense fallback={<div className="min-h-screen bg-white" />}> <BlogMainPage /> </Suspense>} />
           <Route path="/" element={
             <>
               <div className="font-sans antialiased text-gray-800 bg-white">
@@ -357,8 +358,8 @@ const App = () => {
               <nav className="fixed top-0 left-0 right-0 z-50 bg-green-800 shadow-lg py-4">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                   <div className="flex items-center">
-                    <div className="rounded-lg bg-white px-3 py-2 shadow-sm">
-                    <img src={logo} alt="Yuccah garden landscapes Logo" className="h-10" />
+                    <div className="rounded-lg bg-white px-2 py-2 shadow-sm">
+                    <LazyImage src={logo} alt="Yuccah garden landscapes Logo" className="h-10" />
                   </div>
                     {/* <a href="#home" className="text-base sm:text-xl md:text-xl lg:text-xl font-bold text-white tracking-wide">YUCCAH GARDEN LANDSCAPES</a> */}
                   </div>
@@ -377,7 +378,7 @@ const App = () => {
                       className="flex items-center text-white hover:text-white-300 transition-colors duration-300"
                       title="Chat with us on WhatsApp"
                     >
-                      <img
+                      <LazyImage
                         src={require('./images/whatsapp.png').default || require('./images/whatsapp.png')}
                         alt="WhatsApp"
                         className="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-9 lg:h-10 lg:w-10 xl:h-11 xl:w-11 object-contain"
@@ -1127,7 +1128,7 @@ const BlogSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {latestPosts.map((post) => (
             <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
-              <img src={post.image} alt={post.title} className="w-full h-48 object-cover" onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/400x250/CCCCCC/333333?text=Blog+Image`; }} />
+              <LazyImage src={post.image} alt={post.title} className="w-full h-48 object-cover" onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/400x250/CCCCCC/333333?text=Blog+Image`; }} />
               <div className="p-6 text-left">
                 <h3 className="text-xl font-semibold text-green-800 mb-2">{post.title}</h3>
                 <p className="text-sm text-gray-500 mb-3">{new Date(post.date).toLocaleDateString()}</p>
